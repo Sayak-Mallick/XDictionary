@@ -20,6 +20,7 @@ function App() {
 
   return (
     <div className="app-container">
+      <h1>Dictionary App</h1>
       <div className="search-container">
         <input
           type="text"
@@ -31,14 +32,8 @@ function App() {
       </div>
       {searchResult && (
         <div className="result-container">
-          {searchResult === "Word not found in the dictionary." ? (
-            <p>{searchResult}</p>
-          ) : (
-            <>
-              <h3>Definition:</h3>
-              <p>{searchResult}</p>
-            </>
-          )}
+          <h3>Definition:</h3>
+          <p>{searchResult}</p>
         </div>
       )}
     </div>
