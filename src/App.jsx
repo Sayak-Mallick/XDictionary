@@ -30,12 +30,10 @@ function App() {
         />
         <button onClick={handleSearch}>Search</button>
       </div>
-      {searchResult && (
-        <div className="result-container">
-          <h3>Definition:</h3>
-          <p>{searchResult}</p>
-        </div>
-      )}
+      <div className="result-container">
+        <h3>Definition:</h3>
+        {searchResult && <p>{searchResult}</p>}
+      </div>
     </div>
   )
 }
